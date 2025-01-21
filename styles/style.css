@@ -6,4 +6,70 @@
     font-weight: 400;
     font-style: normal;
   }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+ 
+ 
+  /* shared styles */
+  .display-flex{
+    display: flex;
+  }
+  .text-orange{
+    color: rgb(255, 139, 19);
+  }
+  .text-pink{
+    color: rgb(242, 102, 171);
+  }
+  .text-purple{
+    color: rgb(164, 89, 209);
+  }
+  .text-sky-blue{
+    color: rgb(44, 211, 225);
+  }
+
+  /* header styles */
+.header{
+   
+}
+  /* navbar related styles */
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+  .logo-container{
+    align-items: center;
+
+  }
+  .nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .nav-btn{
+    background-color: rgb(164, 89, 209);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 6px;
+  }
+  .navbar{
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 4px 0px #000000;
+    padding: 20px 0;
+    align-items: center;
+    
+  }
+.banner{
+    max-width: 1158px;
+}
+
+ 
+
+ 
+
   
