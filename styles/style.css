@@ -510,8 +510,7 @@ body {
 
 /* medium device */
 @media screen and (min-width: 576px) {
- .nav-icon,
- .nav-btn{
+ .nav-icon{
     display: none;
   }
   .banner-image {
