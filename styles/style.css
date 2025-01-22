@@ -12,6 +12,11 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 
 
 /* shared styles */
@@ -87,7 +92,8 @@
   /* max-width: 640px; */
 
 }
-.brand-title{
+
+.brand-title {
   font-size: 2rem;
   font-weight: 700;
 }
@@ -124,12 +130,14 @@
   font-weight: 600;
   border: none;
 }
-.banner-image{
-  max-width: 100%;
+
+.banner-image {
+  width: 100%;
   height: auto;
 }
+
 /* standard styles */
-.standard{
+.standard {
   max-width: 1440px;
   margin: 0 auto;
   align-items: center;
@@ -139,58 +147,87 @@
   background-position: center;
   background-size: cover;
 }
-.card-section{
+
+.card-section {
   justify-content: space-evenly;
   padding-top: 80px;
   padding-bottom: 80px;
   gap: 28px;
 }
-.section-title{
+
+.section-title {
   padding-top: 60px;
   padding-bottom: 80px;
   font-size: 2.8rem;
   font-weight: 700;
 }
-.card-item{
+
+.card-item-one {
   box-shadow: 0px 0px 28.3px 0.94px #000000;
   padding: 32px 37px;
   max-width: 367px;
   border-radius: 18px;
   background-image: linear-gradient(rgba(222, 245, 255, 1));
+  background: linear-gradient(#DEF5FF 0%, #FFFFFF 40%);
 }
-.card-title{
+
+.card-item-two {
+  box-shadow: 0px 0px 28.3px 0.94px #000000;
+  padding: 32px 37px;
+  max-width: 367px;
+  border-radius: 18px;
+  background-image: linear-gradient(rgba(222, 245, 255, 1));
+  background: linear-gradient(#FFF4DC 0%, #FFFFFF 40%)
+}
+
+.card-item-three {
+  box-shadow: 0px 0px 28.3px 0.94px #000000;
+  padding: 32px 37px;
+  max-width: 367px;
+  border-radius: 18px;
+  background-image: linear-gradient(rgba(222, 245, 255, 1));
+  background: linear-gradient(#EEE1FF 0%, #FFFFFF 40%);
+}
+
+.card-title {
   padding: 32px 37px;
 }
-.card-description{
+
+.card-description {
   padding: 30px 37px;
 }
-.card-btn{
+
+.card-btn {
   padding: 20px 30px;
   border: none;
   background-color: white;
 }
-.section-arrow{
+
+.section-arrow {
   display: flex;
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 60px;
   gap: 10px;
 }
+
 /* our stories starts */
-.stories{
+.stories {
   max-width: 1440px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
-  background-image: url(../assets/bg.png);
+  background-image: url(../assets/bg.png), linear-gradient(white, orange);
 }
-.stories-card{
+
+.stories-card {
   display: flex;
   gap: 19px;
 }
-.stories-btn{
+
+.stories-btn {
   background-color: rgb(164, 89, 209);
-  padding: 14px 18px;
+  padding: 15px 20px;
   font-size: 0.94rem;
   font-weight: 500;
   font-family: "Raleway", serif;
@@ -200,35 +237,61 @@
   margin-bottom: 25px;
   margin-right: 327px;
 }
-.other-card{
+
+.other-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 19px;
+
+}
+.card{
+  background-color: #DEF5FF;
+  width: 290px;
+  height: 301px;
+ border-radius: 16px;
+  opacity: 100%;
   
 }
-.first-story{
+
+.card-first-story {
   width: 540px;
   height: 630px;
+  background-color: #DEF5FF;
+  border-radius: 16px;
+  margin-left: 140px;
+  
 }
-.stories-title{
+
+.stories-title {
   margin: 48px 38px 47px 38px;
   font-size: 1.53rem;
   font-weight: 700;
 }
-.btn-story{
+.card-stories-title{
+  margin-left: 38px;
+  margin-right: 38px;
+  margin-bottom: 28px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-align: start;
+  
+}
+.btn-story {
   width: 197px;
   background-color: #000000;
   color: white;
   padding: 10px 10px;
-  margin-top: 24px;
+  margin-top: 80px;
+  margin-bottom: 60px;
   border-radius: 12px;
   font-size: 1.25rem;
   font-weight: 600;
   border: none;
   margin-bottom: 60px;
 }
+
 /* footer styles */
-.footer{
+.footer {
   max-width: 1440px;
   background-color: rgb(44, 211, 225);
   margin: 0 auto;
@@ -236,22 +299,25 @@
   align-items: center;
 }
 
-.footer-items{
+.footer-items {
   display: flex;
   justify-content: space-around;
-  
+
 }
-.logo-title{
+
+.logo-title {
   align-items: center;
   margin-top: 120px;
 }
-.footer-title{
+
+.footer-title {
   font-size: 2.6rem;
   font-weight: 700;
   margin: 1px 0px 1px 10px;
- 
+
 }
-.footer-description{
+
+.footer-description {
   margin-top: 35px;
   margin-left: 7px;
   font-size: 1.25rem;
@@ -259,33 +325,40 @@
   max-width: 400px;
   line-height: auto;
   margin-bottom: 100px;
-  
+
 }
-.item-two{
+
+.item-two {
   margin-top: 120px;
 }
-.school-title{
+
+.school-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.footer-title-1{
+
+.footer-title-1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-left: -100px;
 }
-.footer-heading{
+
+.footer-heading {
   margin: 1px 0px 12px 0px;
 }
-.footer p{
+
+.footer p {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 32px;
- text-align: left;
+  text-align: left;
 }
-.item-three{
+
+.item-three {
   margin-top: 120px;
 }
-.keep{
+
+.keep {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 32px;
@@ -293,7 +366,8 @@
   margin-left: 1px;
 
 }
-.social-icons{
+
+.social-icons {
   gap: 10px;
   margin-top: 32px;
 }
@@ -302,24 +376,126 @@
 
 /* responsive media query */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
+
   .navbar,
   .logo-container,
   .nav-links,
-  .banner{
+  .banner,
+  .card-section,
+  .footer-items {
     flex-direction: column;
   }
-  .nav-links,
-  .nav-btn,
-  .brand-title{
-    display: none;
+  .stories-card{
+    flex-direction: column;
+    
   }
 
-}
-@media screen and (min-width: 392px){
-  .nav-icon{
+  .nav-links,
+  .nav-btn,
+  .brand-title {
     display: none;
   }
+  #dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  
+  .nav-link-item {
+    margin-right: -200px;
+  }
+  
+  .banner {
+    flex-direction: column-reverse;
+  }
+  
+  .banner-image {
+    width: 100%;
+  }
+  
+  .banner-btn {
+    text-align: center;
+    margin-left: 100px;
+  }
+  .banner-description{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 8px 18px;
+  }
+  .banner-title{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 44px;
+    padding: 5px 12px;
+  }
+ .card-first-story{
+  display: none;
+ }
+ .stories-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+ }
+ .card{
+  width: 50%;
+  height: auto;
+ }
+ 
+ .stories-btn {
+  background-color: rgb(164, 89, 209);
+  padding: 15px 20px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  font-family: "Raleway", serif;
+  border-radius: 45px;
+  margin-top: -314px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  margin-right: 327px;
+}
+
+ .footer-items{
+  margin-left: 10px;
+ }
+ .logo-title{
+  margin-left: 10px;
+ }
+ .footer-description{
+  font-size: 0.92rem;
+  font-weight: 400;
+  padding: 10px 10px;
+ }
+ .item-two{
+  margin-top: -50px;
+  
+ }
+ .school-title{
+  text-align: start;
+ }
+ .item-three{
+  margin-top: 20px;
+  text-align: start;
+  margin-bottom: 50px;
+  
+ }
  
  
+
+ 
+
+}
+
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+ .nav-icon,
+ .nav-btn{
+    display: none;
+  }
+  .banner-image {
+    width: 100%;
+  }
 }
